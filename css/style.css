@@ -1,0 +1,169 @@
+
+
+
+* {
+   
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #FFFFFF;
+    line-height: 1.6;
+    transition: 1s;
+    background-size: 100%;
+    background-image: url("AdmiredDigitalHarrier-size_restricted.gif");
+    position: relative;
+    
+}
+
+@keyframes change {
+    0% {
+        background-position: left
+    }
+    100% {
+        background-position: right
+    }
+}
+
+
+
+
+.topnav {
+  list-style-type: none;
+  padding: hidden;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  background-color: #1a1a1a;
+  max-width: auto;
+}
+
+
+.topnav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: Monospace, Monaco;
+  font-weight: bold;
+  line-height: 40px;
+  transition: 0.4s;
+  max-width: 100%;
+
+}
+
+.topnav a:after{
+  content: "";
+  position: absolute;
+  background-color: #ff0000;
+  height: 18px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.topnav a:hover:after {
+ width: 100%;
+}
+
+.topnav a:nth-last-child(2) {
+  border-right: none;
+}
+
+.topnav a:first-child {
+  border-left: none;
+}
+
+.topnav a:last-child {
+  border-right: none;
+  border-left: none;
+}
+
+
+
+.topnav a.active {
+  color: #4d4d4d;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width :1010px) {
+  .topnav a:not(last-child) {
+      display: none;
+  }
+
+  .topnav a.icon {
+      float: left;
+      display: block;
+  }
+
+  .topnav a {
+      font-size: 2.3em;
+  }
+  .topnav.responsive {
+      position: relative;
+  }
+  .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  .topnav.responsive a {
+      display: block;
+      text-align: left;
+  }
+  .topnav {
+      flex-direction: column;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .row {
+      flex-direction: column;
+      display: flex;
+  }
+}
+
+
+a {
+    font-size: 115%;
+    position: relative;
+    text-decoration: none;
+    color: #5e53f5;
+    margin: 0 50px;
+    
+}
+
+h1,h2 {
+   font-weight: 300;
+   font-size: 200%;
+    line-height: 1.2;
+    margin: 10 40px;
+}
+
+p9 {
+  margin: 10px 60px;
+  font-size: 185%;
+  color:#ff0000
+}
+
+p {
+    margin: 25px 80px;
+    font-size: 135%;
+}
+
+
+
